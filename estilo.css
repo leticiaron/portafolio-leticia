@@ -1,0 +1,305 @@
+/*BARRA DE NAVEGACIÓN*/
+.navbar {
+  position: fixed;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  padding: 1px;
+  width: 100%;
+}
+
+#nav_bar a {
+  text-decoration: none;
+  color: white;
+  font-style: bold;
+  margin: 0 60px;
+  text-shadow: 2px 2px 4px #1c1b1b;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  margin-right: 50px;
+  list-style-type: none;
+}
+
+/*CUERPO*/
+body {
+  font-family: "Averia Sans Libre", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #1c1b1b;
+  background-color: #000d0e;
+  font-size: 20px;
+  text-align: center;
+}
+
+/*AGRANDAR SECCIONES AL PASAR EL MOUSE*/
+section {
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: scale(1.05);
+}
+
+/*ENCABEZADO*/
+header {
+  background: rgb(93, 168, 243);
+  color: #fff;
+  padding: 20px;
+  height: 50vh;
+  background-image: url(https://img.freepik.com/foto-gratis/arreglo-escritorio-angulo-alto-laptop_23-2149013923.jpg?w=740&t=st=1721175163~exp=1721175763~hmac=09ad6193f410aec2e8461912267409c1f7e28c3bf6e9dbf0a10e8d0389a28ea1);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  max-height: 100%;
+  border-radius: 30px;
+  justify-content: center;
+  display: grid;
+  align-items: center;
+  line-height: 0.3;
+}
+
+h1 {
+  font-weight: 700;
+  font-style: bold;
+  font-size: 70px;
+  text-shadow: 2px 2px 4px #1c1b1b;
+}
+
+#centro p {
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 1px 2px #1c1b1b;
+}
+
+/*ACERCA DE MI*/
+#acercaDeMi {
+  text-align: center;
+  border-radius: 30px;
+  background-color: #1d545c;
+  font-size: x-large;
+  color: #000d0e;
+  margin-top: 10px;
+  padding: 40px;
+}
+
+#acercaDeMi h2 {
+  color: #361911;
+  font-weight: bold;
+  font-style: bold;
+  font-size: 60px;
+}
+
+p {
+  font-family: "Fredoka", sans-serif;
+}
+
+/*APRENDIZAJE*/
+#miAprendizaje {
+  border-radius: 30px;
+  background-color: #002b31;
+  padding: 15px 15px;
+  font-size: xx-large;
+  color: #ca9c4b;
+}
+
+#miAprendizaje img {
+  padding-bottom: 15px;
+  padding-top: 0;
+}
+
+.logotipos {
+  display: flex;
+  text-align: center;
+  max-width: 100%;
+  font-size: 3rem;
+  justify-content: center;
+}
+
+/*OBJETIVOS*/
+.objetivos {
+  padding: 40px;
+  border-radius: 30px;
+  background-color: #361911;
+  margin-top: 10px;
+  font-size: x-large;
+  color: #ca9c4b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.objetivosInfo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /*crea tres columnas iguales*/
+  gap: 20px; /*espacio entre columnas*/
+  width: 100%;
+  max-width: 1200px;
+  padding: 10px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.objetivosInfo h3 {
+  color: #ca9c4b;
+  text-shadow: 2px 2px 4px #1d545c;
+}
+
+.objetivosInfo p {
+  text-align: left;
+  background-color: #002b31;
+  border-radius: 10px;
+  margin: 0px 15px 15px 15px;
+  padding: 10px;
+  border: 2px inset #ca9c4b;
+  color: #2a646d;
+}
+
+.encabezadocolumna {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.columna {
+  box-sizing: border-box;
+}
+
+.columna h3 {
+  margin-top: 0;
+}
+
+/*FORMULARIO*/
+form,
+#contacto {
+  background-color: #1d545c;
+  border-radius: 10px;
+  box-shadow: 0 1 10px rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+}
+
+#contacto {
+  margin: 0 auto;
+  width: 50%;
+  padding: 10px 0;
+}
+
+label {
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  margin: 10px 0;
+  padding: 10px;
+  width: 60%;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 11px;
+  background-color: #ca9c4b;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 5px rgb(71, 70, 70);
+  border-color: rgba(27, 35, 104, 0.466);
+  outline: none;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+textarea {
+  margin-top: 0;
+  height: 150px;
+}
+
+#enviar {
+  padding: 10px 15px;
+  background-color: #361911;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto;
+  font-size: 12px;
+}
+
+/*MENSAJE DE BIENVENIDA*/
+.mensaje-bienvenida {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* para que esté encima de otros elementos */
+  visibility: visible; /*visible por defecto */
+}
+
+.contenido-mensaje {
+  background-color: #ca9c4b;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #002b31;
+  position: relative;
+  max-width: 90%;
+  text-align: center;
+}
+
+.cerrar-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cerrar-btn:hover {
+  color: #2a646d;
+}
+
+/*DESPLAZAMIENTO SUAVE*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*VOLVER ARRIBA*/
+.scroll-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-btn:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+/*PIE DE PÁGINA*/
+footer {
+  text-size-adjust: auto;
+  border: #1d545c 1px solid;
+  border-radius: 2px;
+  color: #1d545c;
+  font-size: 70%;
+  background-color: #002b31;
+  text-align: center;
+}

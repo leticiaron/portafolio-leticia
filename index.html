@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi primer portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Fredoka:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="pagina_principal">
+    <!--   *NAVBAR*  -->
+    <nav class="navbar" id="nav_bar">
+      <div id="navbarList">
+        <ul class="navbar-nav">
+          <li><a href="#acercaDeMi">Sobre Mi</a></li>
+          <li><a href="#miAprendizaje">Aprendizaje</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--   *CENTRO*  -->
+    <header id="centro">
+      <div>
+        <h1>Leticia Ron</h1>
+        <p>Estudiante de Desarrollo Web</p>
+      </div>
+    </header>
+
+    <!--   *ACERCA DE MI*  -->
+    <section id="acercaDeMi">
+      <h2>Acerca de mi</h2>
+      <h3>Soy Leticia, estudiante...</h3>
+      <p>
+        Este año tuve la posibilidad de acceder a JaP (Jóvenes a Programar), un
+        programa del plan Ceibal que ayuda a insertar laboralmente a jóvenes de
+        18 a 30 años en el área de TI.
+      </p>
+      <p>
+        Este es mi primer acercamiento a la programación, pero gracias a esta
+        oportunidad, estoy adquiriendo herramientas clave.
+      </p>
+    </section>
+
+    <!--   *APRENDIZAJE*  -->
+    <section id="miAprendizaje">
+      <h2>Mi aprendizaje</h2>
+      <div class="logotipos">
+        <img src="assets/img/html.png" alt="logo html" />
+        <img src="assets/img/css.png" alt="logo css" />
+        <img src="assets/img/javascript.png" alt="logo js" />
+      </div>
+    </section>
+
+    <!--   *OBJETIVOS*  -->
+    <section class="objetivos">
+      <h2 class="encabezadocolumna">¿Cuáles son mis objetivos en FASE 2?</h2>
+
+      <div class="objetivosInfo">
+        <div class="columna">
+          <h3>Fundamentos del Desarrollo Web</h3>
+          <p>
+            Conocer en profundidad HTML, CSS y JavaScript, que son las
+            tecnologías esenciales para construir sitios web.
+          </p>
+        </div>
+
+        <div class="columna">
+          <h3>Principios de Responsividad</h3>
+          <p>
+            Implementar estos principios, asegurando que los sitios web se vean
+            y funcionen bien en diferentes dispositivos y tamaños de pantalla
+            utilizando técnicas de diseño responsivo.
+          </p>
+        </div>
+
+        <div class="columna">
+          <h3>Resolución de Problemas:</h3>
+          <p>
+            Desarrollar habilidades con el fin de mejorar la capacidad para
+            identificar y solucionar errores y problemas en el código.
+          </p>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <!--   *CONTACTO*  -->
+    <section id="contacto">
+      <h2>CONTACTO</h2>
+      <div class="form-container">
+        <form id="formulario" action="" method="post">
+          <label for="nombre">Nombre: </label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Escribe tu nombre"
+            required
+          /><br />
+
+          <label for="apellido">Apellido: </label>
+          <input
+            type="text"
+            id="apellido"
+            name="apellido"
+            placeholder="Escribe tu apellido"
+          /><br />
+
+          <label for="email">Email: </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Escribe tu email"
+            autocomplete="email"
+          /><br />
+
+          <label for="telefono">Teléfono: </label>
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            placeholder="Escribe tu teléfono"
+          /><br />
+
+          <label for="mensaje">Tu Mensaje: </label><br />
+          <textarea id="mensaje" name="mensaje" required></textarea> <br />
+
+          <input id="enviar" type="submit" value="Enviar" />
+        </form>
+      </div>
+    </section>
+
+    <!--   *MENSAJE DE BIENVENIDA*  -->
+    <div id="mensaje-bienvenida" class="mensaje-bienvenida">
+      <div class="contenido-mensaje">
+        <span class="cerrar-btn">&times;</span>
+        <h1>¡Bienvenido a mi portafolio!</h1>
+        <p>Estoy feliz de tenerte aquí!</p>
+        <p>Disfrutá navegando:&#41;</p>
+      </div>
+    </div>
+
+    <!--   *VOLVER ARRIBA*  -->
+    <img
+      id="scrollBtn"
+      class="scroll-btn"
+      src="assets/img/flecha-arriba.png"
+      alt="Volver Arriba"
+    />
+
+    <!--   *JAVASCRIPT*  -->
+    <script src="script.js"></script>
+  </body>
+  <footer>
+    Gracias por visitar mi portafolio, prometo mejorar para la próxima!
+  </footer>
+</html>
