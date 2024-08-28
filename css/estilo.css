@@ -1,30 +1,3 @@
-/*BARRA DE NAVEGACIÓN*/
-.navbar {
-  position: fixed;
-  display: flex;
-  border-radius: 10px;
-  justify-content: center;
-  padding: 1px;
-  width: 100%;
-}
-
-#nav_bar a {
-  text-decoration: none;
-  color: white;
-  font-style: bold;
-  margin: 0 60px;
-  text-shadow: 2px 2px 4px #1c1b1b;
-}
-
-ul {
-  display: flex;
-}
-
-li {
-  margin-right: 50px;
-  list-style-type: none;
-}
-
 /*CUERPO*/
 body {
   font-family: "Averia Sans Libre", sans-serif;
@@ -55,8 +28,6 @@ header {
   background-image: url(https://img.freepik.com/foto-gratis/arreglo-escritorio-angulo-alto-laptop_23-2149013923.jpg?w=740&t=st=1721175163~exp=1721175763~hmac=09ad6193f410aec2e8461912267409c1f7e28c3bf6e9dbf0a10e8d0389a28ea1);
   background-size: cover;
   background-position: center;
-  text-align: center;
-  max-height: 100%;
   border-radius: 30px;
   justify-content: center;
   display: grid;
@@ -67,14 +38,17 @@ header {
 h1 {
   font-weight: 700;
   font-style: bold;
-  font-size: 70px;
+  font-size: 4rem;
   text-shadow: 2px 2px 4px #1c1b1b;
+  padding: auto;
+  margin: 0;
 }
 
 #centro p {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: white;
   text-shadow: 1px 1px 2px #1c1b1b;
+  margin: 0;
 }
 
 /*ACERCA DE MI*/
@@ -82,48 +56,62 @@ h1 {
   text-align: center;
   border-radius: 30px;
   background-color: #1d545c;
-  font-size: x-large;
   color: #000d0e;
   margin-top: 10px;
-  padding: 40px;
+  padding: 20px;
 }
 
 #acercaDeMi h2 {
   color: #361911;
   font-weight: bold;
   font-style: bold;
-  font-size: 60px;
+  font-size: 3rem;
+}
+
+#acercaDeMi h3 {
+  font-size: 1.75rem; /* Ajustar el tamaño de fuente para pantallas medianas */
 }
 
 p {
   font-family: "Fredoka", sans-serif;
+  font-size: 1.125rem; /* Ajustar el tamaño de fuente para pantallas medianas */
 }
 
 /*APRENDIZAJE*/
 #miAprendizaje {
   border-radius: 30px;
   background-color: #002b31;
-  padding: 15px 15px;
+  padding: 15px;
   font-size: xx-large;
   color: #ca9c4b;
+  text-align: center;
+}
+
+#miAprendizaje h2 {
+  font-size: 2rem; /* Ajusta el tamaño del título para pantallas pequeñas */
+  margin-bottom: 20px; /* Espacio debajo del título */
 }
 
 #miAprendizaje img {
-  padding-bottom: 15px;
-  padding-top: 0;
+  padding: 10px; /* Espacio alrededor de las imágenes */
+  max-width: 200px; /* Ajusta el tamaño máximo de las imágenes */
+  height: auto; /* Mantiene la proporción de las imágenes */
 }
 
 .logotipos {
   display: flex;
-  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /*text-align: center;
   max-width: 100%;
   font-size: 3rem;
-  justify-content: center;
+  justify-content: center;*/
 }
 
 /*OBJETIVOS*/
 .objetivos {
-  padding: 40px;
+  padding: 1rem;
   border-radius: 30px;
   background-color: #361911;
   margin-top: 10px;
@@ -137,27 +125,34 @@ p {
 .objetivosInfo {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /*crea tres columnas iguales*/
-  gap: 20px; /*espacio entre columnas*/
+  gap: 1rem; espacio entre columnas
   width: 100%;
-  max-width: 1200px;
-  padding: 10px;
+  /*max-width: 1200px;*/
   justify-content: center;
   justify-items: center;
+  box-sizing: border-box;
 }
+
+/*.objetivosInfo .columna {
+  box-sizing: border-box;
+}*/
 
 .objetivosInfo h3 {
   color: #ca9c4b;
   text-shadow: 2px 2px 4px #1d545c;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .objetivosInfo p {
   text-align: left;
   background-color: #002b31;
   border-radius: 10px;
-  margin: 0px 15px 15px 15px;
+  margin: 0;
   padding: 10px;
   border: 2px inset #ca9c4b;
   color: #2a646d;
+  box-sizing: border-box;
 }
 
 .encabezadocolumna {
@@ -165,13 +160,13 @@ p {
   margin-bottom: 20px;
 }
 
-.columna {
+/*.columna {
   box-sizing: border-box;
 }
 
 .columna h3 {
   margin-top: 0;
-}
+}*/
 
 /*FORMULARIO*/
 form,
@@ -247,6 +242,7 @@ textarea {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1000; /* para que esté encima de otros elementos */
   visibility: visible; /*visible por defecto */
+  overflow: auto;
 }
 
 .contenido-mensaje {
@@ -257,6 +253,9 @@ textarea {
   position: relative;
   max-width: 90%;
   text-align: center;
+  overflow: auto;
+  max-width: 500px; /* Ajusta según sea necesario */
+  max-height: 80vh; /* Ajusta según sea necesario */
 }
 
 .cerrar-btn {
@@ -302,4 +301,61 @@ footer {
   font-size: 70%;
   background-color: #002b31;
   text-align: center;
+}
+
+/* Media Queries para pantallas medianas */
+@media (max-width: 767.98px) {
+  /* Ajuste para pantallas de menos de 768px */
+  header {
+    height: 40vh; /* Reducir la altura en pantallas más pequeñas si es necesario */
+  }
+
+  h1 {
+    font-size: 3rem; /* Ajustar tamaño de fuente para pantallas pequeñas */
+  }
+
+  #centro p {
+    font-size: 1rem; /* Ajustar tamaño de fuente para pantallas pequeñas */
+  }
+
+  #acercaDeMi {
+    padding: 15px; /* Reducir padding en pantallas más pequeñas */
+  }
+
+  #acercaDeMi h2 {
+    font-size: 2.5rem; /* Ajustar tamaño de fuente para pantallas pequeñas */
+  }
+
+  #acercaDeMi h3 {
+    font-size: 1.5rem; /* Ajustar tamaño de fuente para pantallas pequeñas */
+  }
+
+  p {
+    font-size: 1rem; /* Ajustar tamaño de fuente para pantallas pequeñas */
+  }
+
+  #miAprendizaje {
+    padding: 10px; /* Reducir padding en pantallas más pequeñas */
+  }
+
+  #miAprendizaje h2 {
+    font-size: 1.5rem; /* Ajusta el tamaño del título para pantallas pequeñas */
+  }
+
+  #miAprendizaje img {
+    max-width: 80px; /* Ajustar tamaño máximo de las imágenes en pantallas pequeñas */
+  }
+
+  .objetivosInfo {
+    grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    gap: 15px; /* Ajusta el espacio entre columnas */
+  }
+
+  .objetivosInfo h3 {
+    font-size: 1.5rem; /* Tamaño de fuente del encabezado en pantallas pequeñas */
+  }
+
+  .objetivosInfo p {
+    font-size: 1rem; /* Tamaño de fuente del párrafo en pantallas pequeñas */
+  }
 }

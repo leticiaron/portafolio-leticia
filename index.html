@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi primer portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,8 +24,36 @@
   </head>
 
   <body id="pagina_principal">
-    <!--   *NAVBAR*  -->
-    <nav class="navbar" id="nav_bar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-1">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav w-100 justify-content-between">
+            <li class="nav-item">
+              <a class="nav-link active" href="#acercaDeMi">Sobre Mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#miAprendizaje">Aprendizaje</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--   *NAVBAR*  
+    <nav class="navbar-nav navbar-expand-lg" id="nav_bar">
       <div id="navbarList">
         <ul class="navbar-nav">
           <li><a href="#acercaDeMi">Sobre Mi</a></li>
@@ -30,10 +61,13 @@
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </div>
-    </nav>
+    </nav>-->
 
     <!--   *CENTRO*  -->
-    <header id="centro">
+    <header
+      id="centro"
+      class="container-fluid row justify-content-center align-items-center text-center"
+    >
       <div>
         <h1>Leticia Ron</h1>
         <p>Estudiante de Desarrollo Web</p>
@@ -41,36 +75,51 @@
     </header>
 
     <!--   *ACERCA DE MI*  -->
-    <section id="acercaDeMi">
-      <h2>Acerca de mi</h2>
-      <h3>Soy Leticia, estudiante...</h3>
-      <p>
-        Este año tuve la posibilidad de acceder a JaP (Jóvenes a Programar), un
-        programa del plan Ceibal que ayuda a insertar laboralmente a jóvenes de
-        18 a 30 años en el área de TI.
-      </p>
-      <p>
-        Este es mi primer acercamiento a la programación, pero gracias a esta
-        oportunidad, estoy adquiriendo herramientas clave.
-      </p>
+    <section id="acercaDeMi" class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h2>Acerca de mi</h2>
+          <h3>Soy Leticia, estudiante...</h3>
+          <p>
+            Este año tuve la posibilidad de acceder a JaP (Jóvenes a Programar),
+            un programa del plan Ceibal que ayuda a insertar laboralmente a
+            jóvenes de 18 a 30 años en el área de TI.
+          </p>
+          <p>
+            Este es mi primer acercamiento a la programación, pero gracias a
+            esta oportunidad, estoy adquiriendo herramientas clave.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!--   *APRENDIZAJE*  -->
-    <section id="miAprendizaje">
-      <h2>Mi aprendizaje</h2>
-      <div class="logotipos">
-        <img src="assets/img/html.png" alt="logo html" />
-        <img src="assets/img/css.png" alt="logo css" />
-        <img src="assets/img/javascript.png" alt="logo js" />
+
+    <section id="miAprendizaje" class="container-fluid">
+      <div class="row text-center">
+        <div class="col-12">
+          <h2>Mi aprendizaje</h2>
+        </div>
+        <div
+          class="col-12 col-md-12 d-flex justify-content-center flex-wrap logotipos"
+        >
+          <img src="assets/img/html.png" alt="logo html" class="img-fluid" />
+          <img src="assets/img/css.png" alt="logo css" class="img-fluid" />
+          <img
+            src="assets/img/javascript.png"
+            alt="logo js"
+            class="img-fluid"
+          />
+        </div>
       </div>
     </section>
 
     <!--   *OBJETIVOS*  -->
-    <section class="objetivos">
+    <section class="objetivos container">
       <h2 class="encabezadocolumna">¿Cuáles son mis objetivos en FASE 2?</h2>
 
-      <div class="objetivosInfo">
-        <div class="columna">
+      <div class="objetivosInfo row">
+        <div class="col-12 col-md-4 col-lg-4 columna">
           <h3>Fundamentos del Desarrollo Web</h3>
           <p>
             Conocer en profundidad HTML, CSS y JavaScript, que son las
@@ -78,7 +127,7 @@
           </p>
         </div>
 
-        <div class="columna">
+        <div class="col-12 col-md-4 col-lg-4 columna">
           <h3>Principios de Responsividad</h3>
           <p>
             Implementar estos principios, asegurando que los sitios web se vean
@@ -87,7 +136,7 @@
           </p>
         </div>
 
-        <div class="columna">
+        <div class="col-12 col-md-4 col-lg-4 columna">
           <h3>Resolución de Problemas:</h3>
           <p>
             Desarrollar habilidades con el fin de mejorar la capacidad para
@@ -145,7 +194,7 @@
       </div>
     </section>
 
-    <!--   *MENSAJE DE BIENVENIDA*  -->
+    <!--   *MENSAJE DE BIENVENIDA*  
     <div id="mensaje-bienvenida" class="mensaje-bienvenida">
       <div class="contenido-mensaje">
         <span class="cerrar-btn">&times;</span>
@@ -153,7 +202,7 @@
         <p>Estoy feliz de tenerte aquí!</p>
         <p>Disfrutá navegando:&#41;</p>
       </div>
-    </div>
+    </div>-->
 
     <!--   *VOLVER ARRIBA*  -->
     <img
@@ -164,7 +213,8 @@
     />
 
     <!--   *JAVASCRIPT*  -->
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
   </body>
   <footer>
     Gracias por visitar mi portafolio, prometo mejorar para la próxima!
